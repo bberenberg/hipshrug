@@ -8,7 +8,8 @@ app.use(bodyParser.json());
 
 app.post('/', function(request, response){
   var data = {
-    message: request.body.item.message.message.slice(7) + '  ¯\\_(ツ)_/¯'
+    message: request.body.item.message.message.slice(7) + '  ¯\\_(ツ)_/¯',
+    color: "gray"
   };
   response.send(data);    // echo the result back
 });
